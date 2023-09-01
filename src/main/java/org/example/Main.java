@@ -13,7 +13,11 @@ public class Main {
 
             // Press Shift+F9 to start debugging your code. We have set one breakpoint
             // for you, but you can always add more by pressing Ctrl+F8.
+
+            // две константы p и e, создать 3 мотода(синус, косинус, тангенс), плозадь круга, длинна окружности, math random
+
             System.out.println("i = " + i);
+
         }
     }
 }
