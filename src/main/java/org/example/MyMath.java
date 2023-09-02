@@ -51,4 +51,14 @@ public class MyMath {
           return degrees * (PI/180);
      }
 
+     // метод псевдорандома с помощью использования значения счетчика высокоточного таймера
+     public static int random(int max){
+         return (int) ((System.nanoTime()/9) % max+1);
+     }
+
+     // переопределён метод рандом и выдаёт значения от 0 до 9
+     public static int random(){
+          return (int) ((System.nanoTime()/9%99)%10);
+     }
+
 }

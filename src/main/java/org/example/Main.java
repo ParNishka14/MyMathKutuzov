@@ -8,6 +8,7 @@ public class Main {
 
             System.out.println(MyMath.tg(30));
             System.out.println(Math.tan(Math.toRadians(30)));
-
+            System.out.println(MyMath.random(140));
+            System.out.println(MyMath.random());
         }
     }
