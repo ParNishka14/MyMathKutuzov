@@ -70,5 +70,4 @@ public class MyMath {
           } while ((t - squareRoot) != 0);
           return squareRoot;
      }
-
 }
