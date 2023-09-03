@@ -14,7 +14,7 @@ public class MyMath {
      public static double cos(double degrees){
 
           double sin = sin(degrees);
-          return  sqrt(1- sin * sin);  //использование библиотеки Math, простите((
+          return  sqrt(1- sin * sin);
      }
 
      // вычисление синуса
