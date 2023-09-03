@@ -14,7 +14,7 @@ public class MyMath {
      public static double cos(double degrees){
 
           double sin = sin(degrees);
-          return  Math.sqrt(1- sin * sin);  //использование библиотеки Math, простите((
+          return  sqrt(1- sin * sin);  //использование библиотеки Math, простите((
      }
 
      // вычисление синуса
@@ -59,6 +59,16 @@ public class MyMath {
      // переопределён метод рандом и выдаёт значения от 0 до 9
      public static int random(){
           return (int) ((System.nanoTime()/9%99)%10);
+     }
+
+     public static double sqrt(double number) {
+          double t;
+          double squareRoot = number / 2;
+          do {
+               t = squareRoot;
+               squareRoot = (t + (number / t)) / 2;
+          } while ((t - squareRoot) != 0);
+          return squareRoot;
      }
 
 }
