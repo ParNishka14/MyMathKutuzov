@@ -70,4 +70,11 @@ public class MyMath {
           } while ((t - squareRoot) != 0);
           return squareRoot;
      }
+     // максимальное число из 2 чисел
+     public static int max(int a, int b){
+          if(a>b){
+               return a;
+          }
+          else return b;
+     }
 }
