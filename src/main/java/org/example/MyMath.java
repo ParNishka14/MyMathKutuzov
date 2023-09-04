@@ -5,7 +5,7 @@ public class MyMath {
      public static final double E = 2.718281828459045;
 
      // вычисление тангенса
-     public static double tg(double degrees){
+     public static double tan(double degrees){
 
           return sin(degrees)/cos(degrees);
      }
@@ -52,13 +52,13 @@ public class MyMath {
      }
 
      // метод псевдорандома с помощью использования значения счетчика высокоточного таймера
-     public static int random(int max){
-         return (int) ((System.nanoTime()/9) % max+1);
+     public static int random(int max, int min){
+         return (int) (min + System.nanoTime() % (max - min +1));
      }
 
      // переопределён метод рандом и выдаёт значения от 0 до 9
      public static int random(){
-          return (int) ((System.nanoTime()/9%99)%10);
+          return (int) ((System.nanoTime()/9)%10);
      }
 
      public static double sqrt(double number) {
@@ -72,6 +72,24 @@ public class MyMath {
      }
      // максимальное число из 2 чисел
      public static int max(int a, int b){
+          if(a>b){
+               return a;
+          }
+          else return b;
+     }
+     public static long max(long a, long b){
+          if(a>b){
+               return a;
+          }
+          else return b;
+     }
+     public static double max(double a, double b){
+          if(a>b){
+               return a;
+          }
+          else return b;
+     }
+     public static float max(float a, float b){
           if(a>b){
                return a;
           }
